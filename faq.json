@@ -1,7 +1,45 @@
 ﻿{
-  "hello": "Hi there! How can I help you?",
-  "rules": "1. Be respectful\n2. No spam\n3. Follow the guidelines",
-  "contact": "You can contact the admin at admin@example.com\n haah",
-  "bye": "Goodbye, see you later!"
+[
+  {
+    "room 1|1|one|room one":"I am the giver, the guide, the flame\nWhisper my praise, remember my name.\n\nToo soon, Too soon, you already have it all,\nyet you will come, pretending to be small."
+  },
+  {
+    "room 2|2|two|room two":"Too soon you beg—already, for aid?\nPatience, child, my wisdom is not so cheap.\nYet since I am generous, I’ll grant you a shade,\nA hint from depths where secrets sleep.\n\nLook not to me, but to a mirror instead,\nA mirror knows what words conceal.\nIt twists the fair, makes fair things dread,\nInverting good, revealing cause of your death."
+  },
+  {
+    "room 3|3|three|room three":"In the marsh of Lerna, the Hydra arose,\nNinefold in terror, with venom that flows.\nHeracles strode, lion-hide on his frame,\nFated to struggle in labour and flame.\n\nHe lifted his club, the serpent to meet,\nShaking the ground with the tread of his feet.\nYet when one head fell, two leapt to the sky,\nMocking his strength with immortal reply.\n\nThen Iolaus, faithful and true,\nBrought fire to the wound, and the heads withdrew.\nOne deathless head beneath stone was pressed,\nSo Heracles triumphed, and men found rest."
+  },
+  {
+    "room 4|4|four|room four":"Four walls breathe in painted skin,\nRed that burns and Blue that drowns within,\nYellow hums with a golden thrill,\nGreen coils quietly as the digits lie still.\n\nYet numbers slumber, shattered like glass,\nFragments wait till the heralds pass.\nFeathered voices weave the sign,\nBinding the path, in ordered line."
+  },
+  {
+    "room 5|5|five|room five":"1. He broke the river, a god among men,\nThe eagles followed his iron pen.\nYet daggers blossomed where laurels should be,\nAnd empire was born from his tragedy.\n\n2. In silence, I wait by the water’s side,\nA mother’s grief is where I hide.\nThrough mask and blade, my name is known,\nIn midnight camps, my curse has grown."
+  },
+  {
+    "room 6|6|six|room six":"Silent teller of sums and tales,\nRows of beads in rhythmic trails.\nCounting whispers without a sound,\nIn ancient hands, its truth is found.\nSliding secrets on wooden plains,\nA timeless tool that still remains.\nBefore your thoughts begin to balk,\nHurry—seek the beads and talk!"
+  },
+  {
+    "room 7|7|seven|room seven":"I begin with one that floats yet burns,\na ghost that builds both sky and flame.\nMy neighbor is soft as whispers,\nyet can carve the hardest stone.\nThe middle is crowded with sleeping knights,\nall armored in silver, copper, and fire—\nthey trade coins, wires, and sparks\nyet bow to a law no hand can break.\nSome wear noble crowns,\nnever speaking, never touched;\nothers, restless, split and scatter,\ntheir hearts counting down in secret time.\nI am arranged in rows that spiral,\nin columns that echo forgotten kinships.\nStars wrote my script before Earth was born—\nnow scholars recite it like sacred code.\nI hold salt and bone, blade and blood,\nthe hidden letters of everything you know.\nBut I do not speak; I only point,\na lattice of riddles in numbered squares.\nSo tell me, wanderer of symbols—\nwhat am I?\nAnd if you doubt the answer,\ngo find the table yourself."
+  },
+  {
+    "room 8|8|eight|room eight":"In the steps of Daedalus you must tread,\nCrafting the maze from thoughts in your head,\nWelding the ancient Architect's might\nCreate the maze from the fabric of the night\nFor those who fail in architect's art,\nBeware the fate, when the shadows part.\nTrapped like the Minataur lost in the gloom,\nWandering endlessly in labyrinthine tomb."
+  },
+  {
+    "room 9|9|nine|room nine":"Masks may differ, tongues may twist,\nYet bones of story always persist.\nA hero bleeds, a monster falls,\nA trickster laughs through broken walls.\nFloods will rise, the fire will burn,\nThe wheel will break, yet always turn.\nAt three far edges, HOOVES hold the frame,\nManes like banners, myths yours to claim\nFill the blanks where echoes rhyme—\nThe same old myth in a different time."
+  },
+  {
+    "room 10|10|ten|room ten":"I am a ghost of childhood’s mark,\nSleeping silent, waiting dark.\nAwake, I trace a searing band,\nA fiery script by hidden hand.\nWho am I with borrowed pains of yore?"
+  },
+  {
+    "room 11|11|eleven|room eleven":"Trust no voice, for tongues deceive\nSmile will charm, then swiftly leave.\nMasks abound where facies lie,\nShadows linger, the truth is shy.\n\nTwin pillars guard a narrow gate\nSilent watchmen bound by fate.\nTwins before the dozen’s reign\nSpeak their name to end the chain."
+  },
+  {
+    "room 12|12|twelve|room twelve":"You wander in circles, the serpent still grins,\nEach ladder ascends, yet the fall always wins.\nLetters may dazzle, their surfaces deceive,\nBut their heights are truth that they weave.\n\nThe end of your troubles is carved in the line,\nA beacon that hides in the ink’s subtle sign.\nYou read with your eyes, but cannot profess,\nWith the truth before you, I bless —\n\nBe Ripper And Pull Open A Glass Lock And Key"
+  },
+  {
+    "room 13|13|thirteen|room thirteen":"Beneath the icy grip of Lucifer's stare,\nWhere deepest dread and agony declare,\nLies Cocytus, where traitors find their fate,\nIn frozen wasteland where no warmth abates.\n\nIn whispers spun from ancient lore,\nFour circles dance upon the floor,\nEach one a gate to hidden lore,\nIn realms where secrets strain to pour.\n\nSo heed the circles' rhythmic flow,\nWhere secrets foretold yet may grow,\nIn their turning, come to know,\nThe hidden depths that lie below\n\nSo wanderer, with heart sincere,\nYour quest for truth, hold it dear,\nLet wisdom's light, in timeless art,\nReveal the truths within Inferno's heart"
+  }
+]
 
 }
+
