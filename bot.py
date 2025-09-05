@@ -17,10 +17,14 @@ logging.basicConfig(
 
 # Load FAQ knowledge base
 with open("faq.json", "r", encoding="utf-8-sig") as f:
-    faq = json.load(f)
+    faq_raw = json.load(f)
 
-# Normalize keys for case-insensitive lookup
-faq = {k.lower(): v for k, v in faq.items()}
+# Expand keys so "room 1|1|one|room one" → multiple valid keys
+faq = {}
+for key, value in faq_raw.items():
+    variants = key.lower().split("|")
+    for variant in variants:
+        faq[variant.strip()] = value
 
 
 # /start command
