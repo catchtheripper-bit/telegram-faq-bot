@@ -9,8 +9,9 @@ logging.basicConfig(
 )
 
 # Load FAQ knowledge base
-with open("faq.json", "r") as f:
+with open("faq.json", "r", encoding="utf-8-sig") as f:
     faq = json.load(f)
+
 
 # Normalize keys (case-insensitive matching)
 faq = {k.lower(): v for k, v in faq.items()}
@@ -40,3 +41,4 @@ def main() -> None:
 
 if name == "main":
     main()
+
