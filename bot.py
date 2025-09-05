@@ -1,36 +1,42 @@
-﻿from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 import json
-import os
+import logging
+from telegram import Update
+from telegram.ext import Application, CommandHandler, MessageHandler, ContextTypes, filters
 
-# Load knowledge base
-def load_kb():
-    with open("faq.json", "r") as f:
-        return json.load(f)
+# Enable logging
+logging.basicConfig(
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level=logging.INFO
+)
 
-knowledge = load_kb()
+# Load FAQ knowledge base
+with open("faq.json", "r") as f:
+    faq = json.load(f)
 
-def start(update, context):
-    update.message.reply_text("Welcome to the Knowledge Bot! Type a keyword like 'rules' or 'contact' to get started.")
+# Normalize keys (case-insensitive matching)
+faq = {k.lower(): v for k, v in faq.items()}
 
-def reply(update, context):
-    global knowledge
-    user_text = update.message.text.lower().strip()
+# /start command
+async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+    await update.message.reply_text("Hi! I’m your FAQ Bot. Ask me anything!")
 
-    if user_text in knowledge:
-        update.message.reply_text(knowledge[user_text])
-    else:
-        update.message.reply_text("Sorry, I don't have an answer for that.")
+# Handle messages
+async def reply(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+    user_message = update.message.text.lower().strip()
+    response = faq.get(user_message, "Sorry, I don’t know the answer to that.")
+    await update.message.reply_text(response)
 
-def main():
-    TOKEN = os.getenv("TOKEN")  # Railway/Render will use environment variable
-    updater = Updater(TOKEN, use_context=True)
-    dp = updater.dispatcher
+def main() -> None:
+    # Get your bot token (replace with your own)
+    import os
+    TOKEN = os.getenv("BOT_TOKEN")
 
-    dp.add_handler(CommandHandler("start", start))
-    dp.add_handler(MessageHandler(Filters.text & ~Filters.command, reply))
+    app = Application.builder().token(TOKEN).build()
 
-    updater.start_polling()
-    updater.idle()
+    app.add_handler(CommandHandler("start", start))
+    app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, reply))
+
+    print("Bot started polling...")
+    app.run_polling()
 
 if name == "main":
     main()
