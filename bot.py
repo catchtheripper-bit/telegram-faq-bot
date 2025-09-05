@@ -29,7 +29,7 @@ async def reply(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 def main() -> None:
     # Get your bot token (replace with your own)
     import os
-    TOKEN = os.getenv("BOT_TOKEN")
+    TOKEN = os.getenv("TOKEN")
 
     app = Application.builder().token(TOKEN).build()
 
@@ -41,6 +41,7 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
 
 
 
